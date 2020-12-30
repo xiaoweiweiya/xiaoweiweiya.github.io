@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Hello World | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="Java中int转String 和 String转int一、int转String有三种方式(1)num + “” (2)String.valueOf(num) (3)Integer.toString(num) 123456789101112131415161718192021222324252627&#x2F;&#x2F;int &#x3D;&gt; Stringint num &#x3D; 123456789; &#x2F;&#x2F;(1)num +">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2020/12/30/hello-world/index.html">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2020/12/30/int-and-String/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Java中int转String 和 String转int一、int转String有三种方式(1)num + “” (2)String.valueOf(num) (3)Integer.toString(num) 123456789101112131415161718192021222324252627&#x2F;&#x2F;int &#x3D;&gt; Stringint num &#x3D; 123456789; &#x2F;&#x2F;(1)num +">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-12-30T11:54:36.604Z">
-<meta property="article:modified_time" content="2020-12-30T11:54:36.605Z">
+<meta property="article:published_time" content="2020-12-30T12:55:52.662Z">
+<meta property="article:modified_time" content="2020-12-30T12:58:02.772Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -154,35 +154,31 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-int-and-String" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      Hello World
-    </h1>
-  
-
-        
-        <a href="/2020/12/30/hello-world/" class="archive-article-date">
-  	<time datetime="2020-12-30T11:54:36.604Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-30</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <h1 id="Java中int转String-和-String转int"><a href="#Java中int转String-和-String转int" class="headerlink" title="Java中int转String 和 String转int"></a>Java中int转String 和 String转int</h1><h2 id="一、int转String有三种方式"><a href="#一、int转String有三种方式" class="headerlink" title="一、int转String有三种方式"></a>一、int转String有三种方式</h2><p>(1)num + “”</p>
+<p>(2)String.valueOf(num)</p>
+<p>(3)Integer.toString(num)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">//int =&gt; String</span></span><br><span class="line"><span class="keyword">int</span> num = <span class="number">123456789</span>;</span><br><span class="line"> </span><br><span class="line"><span class="comment">//(1)num + &quot;&quot;</span></span><br><span class="line"><span class="keyword">long</span> start = System.currentTimeMillis();<span class="comment">//得到开始运行时系统时间		</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="number">100000</span>; i++)&#123;</span><br><span class="line">	String str = num + <span class="string">&quot;&quot;</span>;</span><br><span class="line">&#125;	</span><br><span class="line"><span class="keyword">long</span> end = System.currentTimeMillis();<span class="comment">//得到结束运行时系统时间</span></span><br><span class="line">System.out.println(<span class="string">&quot;num + \&quot;\&quot; : &quot;</span> + (end - start));</span><br><span class="line"> </span><br><span class="line"><span class="comment">//(2)String.valueOf(num)</span></span><br><span class="line">start = System.currentTimeMillis();</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="number">100000</span>; i++)&#123;</span><br><span class="line">	String str = String.valueOf(num);</span><br><span class="line">&#125;</span><br><span class="line">end = System.currentTimeMillis();</span><br><span class="line">System.out.println(<span class="string">&quot;String.valueOf(num) : &quot;</span> + (end - start));</span><br><span class="line"> </span><br><span class="line"><span class="comment">//(3)Integer.toString(num)</span></span><br><span class="line">start = System.currentTimeMillis();</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="number">100000</span>; i++)&#123;</span><br><span class="line">	String str = Integer.toString(num);</span><br><span class="line">&#125;</span><br><span class="line">end = System.currentTimeMillis();</span><br><span class="line">System.out.println(<span class="string">&quot;Integer.toString(num) : &quot;</span> + (end - start));</span><br></pre></td></tr></table></figure>
+<p>运行结果：</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">num</span> + <span class="string">&quot;&quot;</span> : <span class="number">45</span></span><br><span class="line"><span class="attribute">String</span>.valueOf(num) : <span class="number">8</span></span><br><span class="line"><span class="attribute">Integer</span>.toString(num) : <span class="number">9</span></span><br></pre></td></tr></table></figure>
+
+
+<p>可以发现，第一种方式与后面两种方式运行的时间相差比较大。关于这一点的解释，<strong>可以参考<a target="_blank" rel="noopener" href="http://m.blog.csdn.net/article/details?id=50880110">博客</a>写的比较详细</strong>，这里只说一下区别：</p>
+<p>**String.valueOf():**采用String.valueOf(object)的基础是Object#toString()，但这里不用担心object是否为null这一问题，JDK中String#valueOf(object)源码：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">valueOf</span><span class="params">(Object obj)</span></span>&#123;<span class="keyword">return</span> (obj==<span class="keyword">null</span>)?<span class="string">&quot;null&quot;</span>:obj.toString();&#125;</span><br></pre></td></tr></table></figure>
+<p>所以使用该方 法不必担心object为null的情况，但同时注意当object为null时该方法返回”null”，而非null!!!</p>
+<p>**Integer.toString():**采用Integer.toString()的基础仍是Object#toString()，因为java.lang.Object类中已有public方法toString()，所以对任何严格意义上的Java对象都可以调用此方法，但使用时需要注意，必须保证object不是null值，否则将会抛出NullPointerException异常！！！</p>
+<h2 id="二、String转int有两种方式"><a href="#二、String转int有两种方式" class="headerlink" title="二、String转int有两种方式"></a>二、String转int有两种方式</h2><p>(1)Integer.parseInt(str)</p>
+<p>(2)Integer.valueOf(str).intValue()</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">//String =&gt; int</span></span><br><span class="line">String s = <span class="string">&quot;123456789&quot;</span>;</span><br><span class="line"> </span><br><span class="line"><span class="comment">//(1)Integer.parseInt(str)		</span></span><br><span class="line">start = System.currentTimeMillis();</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="number">100000</span>; i++)&#123;</span><br><span class="line">	<span class="keyword">int</span> n = Integer.parseInt(s);</span><br><span class="line">&#125;</span><br><span class="line">end = System.currentTimeMillis();</span><br><span class="line">System.out.println(<span class="string">&quot;Integer.parseInt(str) : &quot;</span> + (end - start));</span><br><span class="line"> </span><br><span class="line"><span class="comment">//(2)Integer.valueOf(str).intValue()</span></span><br><span class="line">start = System.currentTimeMillis();</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="number">100000</span>; i++)&#123;</span><br><span class="line">	<span class="keyword">int</span> n = Integer.valueOf(s).intValue();</span><br><span class="line">&#125;</span><br><span class="line">end = System.currentTimeMillis();</span><br><span class="line">System.out.println(<span class="string">&quot;Integer.valueOf(str).intValue() : &quot;</span> + (end - start));</span><br></pre></td></tr></table></figure>
+<p>运行结果：</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">Integer</span><span class="selector-class">.parseInt</span>(str) : <span class="selector-tag">13</span></span><br><span class="line"><span class="selector-tag">Integer</span><span class="selector-class">.valueOf</span>(str)<span class="selector-class">.intValue</span>() : <span class="selector-tag">10</span></span><br></pre></td></tr></table></figure>
+<p>可以发现，两者运行时间基本差不多。但是第二种方法，先是将String =&gt; Integer =&gt; int，即将String包装类型转化为Integer包装类型，再将包装类型转化为基本类型。</p>
+<p>【包装类型转化为基本类型，调用包装类对象的intValue()、shortValue()、doubleValue()等方法】</p>
 
       
 
@@ -262,7 +258,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/12/30/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/12/30/int-and-String/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -276,15 +272,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/12/30/leetleetcode_database/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
+    <a href="/2020/12/30/leetleetcode_database/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
